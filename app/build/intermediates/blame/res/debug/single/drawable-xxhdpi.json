@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/play_start.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/play_start.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/main_tab_3.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/main_tab_3.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/live.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/live.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/log_show.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/log_show.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/log_hidden.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/log_hidden.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/play_pause.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/play_pause.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/qr_code.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/qr_code.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/black_bkg.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/black_bkg.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/white_bkg.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/white_bkg.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/auto_bitrate.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/auto_bitrate.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/main_tab_1.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/main_tab_1.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/camera_change2.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/camera_change2.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/face_beauty.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/face_beauty.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/input_box.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/input_box.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/vod.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/vod.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/fix_bitrate.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/fix_bitrate.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/main_tab_2.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/main_tab_2.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/camera_change.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/camera_change.png"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/drawable-xxhdpi/cache_time.png",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/drawable-xxhdpi/cache_time.png"
+    }
+]

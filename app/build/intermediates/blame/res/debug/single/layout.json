@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/layout/activity_qrcode.xml",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/layout/activity_qrcode.xml"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/layout/activity_play.xml",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/layout/activity_play.xml"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/layout/merge_camera_preview_view_finder.xml",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/exploded-aar/barcodescanner-core-1.8.4/res/layout/merge_camera_preview_view_finder.xml"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/layout/comment.xml",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/layout/comment.xml"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/layout/titlebar.xml",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/layout/titlebar.xml"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/merged/debug/layout/activity_publish.xml",
+        "source": "/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/res/layout/activity_publish.xml"
+    }
+]

@@ -1,0 +1,7 @@
+#Thu Nov 10 16:33:54 CST 2016
+base.0=/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b084041e15bcc7a32ff0014adeb2f71b174bf34a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_690fe00d3a480a260fd6786f9eafd57677f086ac/classes.dex
+base.1=/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_690fe00d3a480a260fd6786f9eafd57677f086ac
+file.0=/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b084041e15bcc7a32ff0014adeb2f71b174bf34a/classes.dex

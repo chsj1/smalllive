@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.0"
+    timestamp="16154023959774"
+    token="7911641816998686475"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="149" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="21" />
+    <task
+        name="verifier"
+        duration="6" />
+
+    <artifact
+        location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="16078500610120"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="16154023959774"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

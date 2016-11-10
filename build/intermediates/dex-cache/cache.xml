@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="194476c0fee50e47144861d4b16b219009b6998d">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_690fe00d3a480a260fd6786f9eafd57677f086ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/libs/android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_af132ec7f1a6c625b5847010f7017b1cd3f211df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/libs/zxing-core-3.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/2/zxing-core-3.2.1_21bd502f0a015c8dbb04a6c5a215882914c01984/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/libs/bugly_crash_release__2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4b297a8d6f2369bf53b4812e26aa96f2656ae39d">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/2/bugly_crash_release__2.1_1cfa4389ec79f5e6264eefa111bd92b4e13d9520/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/exploded-aar/zxing-1.8.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="68ef1daf85c69fca8fddf7bbb947fc51cc9f8ca3">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/intermediates-exploded-aar-zxing-1.8.4_5f1291f74019dfc18f1e832bd3bb272f679b6f1a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/src/main/jniLibs/txrtmpsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="99404575bb774d796f3054b5313cda3c9c5cafa4">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/2/txrtmpsdk_a9fa611275d280bf0c7ea51c11bfdc1ac69c10b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="0291e2ea407194f99274be469b58921a8cff2854">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b084041e15bcc7a32ff0014adeb2f71b174bf34a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/exploded-aar/barcodescanner-core-1.8.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="af8d42f1f020e936b8cd9f5cb6c75993194895a3">
+        <dex dex="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/intermediates-exploded-aar-barcodescanner-core-1.8.4_4765693aba880d4fc920e1284d528f3a030aecae/classes.dex" />
+    </item>
+
+</items>
