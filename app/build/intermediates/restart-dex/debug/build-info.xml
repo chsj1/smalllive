@@ -4,22 +4,22 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="16154023959774"
+    timestamp="17098692493100"
     token="7911641816998686475"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="149" />
+        duration="87" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="15" />
     <task
         name="verifier"
-        duration="6" />
+        duration="2" />
 
     <artifact
         location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
@@ -33,7 +33,20 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="16154023959774"
+        timestamp="16999113395839"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="17098692493100"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"

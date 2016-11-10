@@ -13,8 +13,8 @@ public final class R {
 		public static final int viewfinder_mask = 0x7f060002;
 	}
 	public static final class id {
-		public static final int camera_preview = 0x7f090022;
-		public static final int view_finder_view = 0x7f090023;
+		public static final int camera_preview = 0x7f09001a;
+		public static final int view_finder_view = 0x7f09001b;
 	}
 	public static final class integer {
 		public static final int viewfinder_border_length = 0x7f050000;

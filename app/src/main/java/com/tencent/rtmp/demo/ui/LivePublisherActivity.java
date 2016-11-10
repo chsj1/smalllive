@@ -44,18 +44,10 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
     private TXLivePusher mLivePusher;
     private TXCloudVideoView mCaptureView;
 
-    private LinearLayout mFaceBeautyLayout;
-    private SeekBar mBeautySeekBar;
-    private SeekBar mWhiteningSeekBar;
     private ScrollView mScrollView;
-    private RadioGroup mRadioGroupBitrate;
     private Button mBtnPlay;
 
     private boolean mVideoPublish;
-    private int mBeautyLevel = 0;
-    private int mWhiteningLevel = 0;
-
-    private Handler mHandler = new Handler();
 
     private Bitmap mBitmap;
 
@@ -84,86 +76,6 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
         mBitmap = decodeResource(getResources(), R.drawable.watermark);
     }
 
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//    private void StartScreenCapture() {
-//        if(mProjectionManager == null) mProjectionManager = (MediaProjectionManager) getActivity().getSystemService
-//                (Context.MEDIA_PROJECTION_SERVICE);
-//
-//        startActivityForResult(mProjectionManager.createScreenCaptureIntent(), REQUEST_CODE_CS);
-//    }
-//
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//    private void StopScreenCapture() {
-//        if(mVirtualDisplay != null) mVirtualDisplay.release();
-//        if(mMediaProjection!= null) mMediaProjection.stop();
-//        if (mImageReader != null) mImageReader.close();
-//
-//        mVirtualDisplay = null;
-//        mMediaProjection = null;
-//        mImageReader = null;
-//    }
-//
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//    @Override
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//
-//        super.onActivityResult(requestCode, resultCode, data);
-//
-//        if (requestCode != REQUEST_CODE_CS) {
-//            Log.e(TAG, "Unknown request code: " + requestCode);
-//            return;
-//        }
-//        if (resultCode != Activity.RESULT_OK) {
-//            Log.e(TAG, "Screen Cast Permission Denied, resultCode:" + resultCode);
-//            return;
-//        }
-//
-//        mMediaProjection = mProjectionManager.getMediaProjection(resultCode, data);
-//
-//        int W = 720, H = W/9*16;
-//
-//        mImageReader = ImageReader.newInstance(W, H, PixelFormat.RGBA_8888, 2);
-//
-//        Surface imageReaderSurface = null;
-//        if(mImageReader != null)
-//        {
-//            mImageReader.setOnImageAvailableListener(this, null);
-//            imageReaderSurface =  mImageReader.getSurface();
-//        }
-//
-//        mVirtualDisplay = mMediaProjection.createVirtualDisplay("TXScreenCapture",
-//                W, H, 1,
-//                DisplayManager.VIRTUAL_DISPLAY_FLAG_PUBLIC,
-//        imageReaderSurface, null /*Callbacks*/, null
-//                    /*Handler*/);
-//
-//        mVideoPublish = startPublishRtmp();
-//    }
-//
-//    private byte [] mGetRGBA = null;
-//
-//    @Override
-//    public void onImageAvailable(ImageReader var1)
-//    {
-//        Image image = var1.acquireNextImage();
-//
-//        if(image != null)
-//        {
-//            Image.Plane [] planes = image.getPlanes();
-//
-//            ByteBuffer rgbaPlane = planes[0].getBuffer();
-//
-//            if(mGetRGBA == null || mGetRGBA.length != rgbaPlane.remaining())
-//            {
-//                mGetRGBA = new byte[rgbaPlane.remaining()];
-//            }
-//            rgbaPlane.get(mGetRGBA);
-//
-//            if(mLivePusher != null) mLivePusher.sendCustomVideoData(mGetRGBA, TXLivePusher.RGB_RGBA, image.getWidth(), image.getHeight());
-//
-//            image.close();
-//        }
-//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater,
@@ -183,14 +95,6 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
         mRtmpUrlView.setHint(" 请扫码输入推流地址...");
         mRtmpUrlView.setText("");
 
-        //美颜部分
-        mFaceBeautyLayout = (LinearLayout) view.findViewById(R.id.layoutFaceBeauty);
-        mBeautySeekBar = (SeekBar) view.findViewById(R.id.beauty_seekbar);
-        mBeautySeekBar.setOnSeekBarChangeListener(this);
-
-        mWhiteningSeekBar = (SeekBar) view.findViewById(R.id.whitening_seekbar);
-        mWhiteningSeekBar.setOnSeekBarChangeListener(this);
-
 
         //播放部分
         mBtnPlay = (Button) view.findViewById(R.id.btnPlay);
@@ -202,7 +106,6 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
                     stopPublishRtmp();
                     mVideoPublish = false;
                 } else {
-                    FixOrAdjustBitrate();  //根据设置确定是“固定”还是“自动”码率
                     mVideoPublish = startPublishRtmp();
 //                    StartScreenCapture();
                 }
@@ -215,14 +118,6 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
 
 
 
-        mRadioGroupBitrate = (RadioGroup) view.findViewById(R.id.resolutionRadioGroup);
-        mRadioGroupBitrate.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                FixOrAdjustBitrate();
-            }
-        });
 
 
 
@@ -260,7 +155,6 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()) {
             default:
-                mFaceBeautyLayout.setVisibility(View.GONE);
         }
     }
 
@@ -443,54 +337,6 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
     }
 
 
-    public void FixOrAdjustBitrate() {
-        if (mRadioGroupBitrate == null || mLivePushConfig == null || mLivePusher == null) {
-            return;
-        }
-
-        RadioButton rb = (RadioButton) getActivity().findViewById(mRadioGroupBitrate.getCheckedRadioButtonId());
-        int mode = Integer.parseInt((String) rb.getTag());
-
-        switch (mode) {
-            case 4: /*720p*/
-                if (mLivePusher != null) {
-                    mLivePushConfig.setVideoResolution(TXLiveConstants.VIDEO_RESOLUTION_TYPE_720_1280);
-                    mLivePushConfig.setAutoAdjustBitrate(false);
-                    mLivePushConfig.setVideoBitrate(1500);
-                    mLivePusher.setConfig(mLivePushConfig);
-                }
-                break;
-            case 3: /*540p*/
-                if (mLivePusher != null) {
-                    mLivePushConfig.setVideoResolution(TXLiveConstants.VIDEO_RESOLUTION_TYPE_540_960);
-                    mLivePushConfig.setAutoAdjustBitrate(false);
-                    mLivePushConfig.setVideoBitrate(1000);
-                    mLivePusher.setConfig(mLivePushConfig);
-                }
-                break;
-            case 2: /*360p*/
-                if (mLivePusher != null) {
-                    mLivePushConfig.setVideoResolution(TXLiveConstants.VIDEO_RESOLUTION_TYPE_360_640);
-                    mLivePushConfig.setAutoAdjustBitrate(false);
-                    mLivePushConfig.setVideoBitrate(700);
-                    mLivePusher.setConfig(mLivePushConfig);
-                }
-                break;
-
-            case 1: /*自动*/
-                if (mLivePusher != null) {
-                    mLivePushConfig.setVideoResolution(TXLiveConstants.VIDEO_RESOLUTION_TYPE_360_640);
-                    mLivePushConfig.setAutoAdjustBitrate(true);
-                    mLivePushConfig.setMaxVideoBitrate(1000);
-                    mLivePushConfig.setMinVideoBitrate(500);
-                    mLivePushConfig.setVideoBitrate(700);
-                    mLivePusher.setConfig(mLivePushConfig);
-                }
-                break;
-            default:
-                break;
-        }
-    }
 
     @Override
     public void onPushEvent(int event, Bundle param) {
@@ -534,17 +380,7 @@ public class LivePublisherActivity extends RTMPBaseActivity implements View.OnCl
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-        if (seekBar.getId() == R.id.beauty_seekbar) {
-            mBeautyLevel = progress;
-        } else if (seekBar.getId() == R.id.whitening_seekbar) {
-            mWhiteningLevel = progress;
-        }
 
-        if (mLivePusher != null) {
-            if (!mLivePusher.setBeautyFilter(mBeautyLevel, mWhiteningLevel)) {
-                Toast.makeText(getActivity().getApplicationContext(), "当前机型的性能无法支持美颜功能", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 
     @Override

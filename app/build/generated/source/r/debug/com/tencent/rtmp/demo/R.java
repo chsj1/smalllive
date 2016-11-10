@@ -69,21 +69,18 @@ public final class R {
         public static final int white_bkg=0x7f020031;
     }
     public static final class id {
-        public static final int beauty_seekbar=0x7f090020;
         public static final int btnCacheStrategy=0x7f090011;
         public static final int btnHWDecode=0x7f09000e;
         public static final int btnLog=0x7f09000d;
         public static final int btnOrientation=0x7f09000f;
         public static final int btnPlay=0x7f09000c;
         public static final int btnRenderMode=0x7f090010;
-        public static final int btnScan=0x7f090024;
+        public static final int btnScan=0x7f09001c;
         public static final int cacheStrategyRadioGroup=0x7f090016;
-        public static final int camera_preview=0x7f090022;
+        public static final int camera_preview=0x7f09001a;
         public static final int content_layout=0x7f090001;
         public static final int duration=0x7f09000b;
-        public static final int layoutBitrate=0x7f09001a;
         public static final int layoutCacheStrategy=0x7f090015;
-        public static final int layoutFaceBeauty=0x7f09001f;
         public static final int loadingImageView=0x7f090014;
         public static final int logViewEvent=0x7f090013;
         public static final int logViewStatus=0x7f090007;
@@ -92,21 +89,16 @@ public final class R {
         public static final int play_start=0x7f090009;
         public static final int radio_btn_auto=0x7f090019;
         public static final int radio_btn_fast=0x7f090017;
-        public static final int radio_btn_fix_360p=0x7f09001e;
-        public static final int radio_btn_fix_540p=0x7f09001d;
-        public static final int radio_btn_fix_720p=0x7f09001c;
         public static final int radio_btn_smooth=0x7f090018;
-        public static final int resolutionRadioGroup=0x7f09001b;
         public static final int root=0x7f090000;
-        public static final int rtmpUrl=0x7f090025;
+        public static final int rtmpUrl=0x7f09001d;
         public static final int scrollview=0x7f090012;
         public static final int seekbar=0x7f09000a;
         public static final int text_play_alive=0x7f090005;
         public static final int text_play_vod=0x7f090004;
         public static final int text_publish_rtmp=0x7f090003;
         public static final int video_view=0x7f090006;
-        public static final int view_finder_view=0x7f090023;
-        public static final int whitening_seekbar=0x7f090021;
+        public static final int view_finder_view=0x7f09001b;
     }
     public static final class integer {
         public static final int viewfinder_border_length=0x7f050000;

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 10 16:33:31 CST 2016
+#Thu Nov 10 16:48:51 CST 2016
 5.base=/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/resources-debug.ap_
 42.base=/Users/huangjundong/work/ugcwork/RTMPAndroidDemo_1.6.2.945 2/app/build/intermediates/res/resources-debug.ap_
 32.set=ANDROID_RESOURCE
